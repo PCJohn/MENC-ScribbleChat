@@ -1,4 +1,8 @@
+/*
+Class to handle GUI to get IP address and username for a client.
 
+Author: Ptihvijit Chakrabarty (prithvichakra@gmail.com)
+*/
 import javax.swing.*;
 import javax.swing.text.JTextComponent;
 import java.awt.*;
