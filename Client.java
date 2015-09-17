@@ -1,7 +1,7 @@
-/**
-*An instance of class Client is created for each connected client*
-*Internetprogrammering 1 - Course
-*@author Martin Carlsson
+/*
+Java socket server client.
+
+Author: Prithvijit Chakrabarty (prithvichakra@gmail.com)
 */
 import java.io.*;
 import java.net.*;
@@ -36,8 +36,7 @@ import java.net.*;
                 this.start();
         }
         
-        
-        // Sends a message to the client object
+        // Send a message to the client object
         public void sendMessage(String msg) {
             try {
                 out.println(msg);
@@ -47,8 +46,7 @@ import java.net.*;
             }
         }
         
-        
-        // Receives messages
+        // Receive messages
         public void run() {
             String inStream=" ";
             try {
@@ -64,6 +62,6 @@ import java.net.*;
             } 
             ch.killClient(this);
         } 
-    } // End class Client
+    }
     
     
