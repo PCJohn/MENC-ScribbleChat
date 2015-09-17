@@ -1,4 +1,8 @@
+/*
+Class to handle the outgoing text stream. Send all text along with the date and time.
 
+Auhthor: Prithvijit Chakrabarty (prithvichakra@gmail.com)
+*/
 import java.net.*;
 import java.io.*;
 import java.util.*;
