@@ -1,4 +1,6 @@
-
+/*
+Paint application to handle user's scribbles. Simple javax.swing to track mous coordinates when clicked.
+*/
 import java.awt.*;
 import java.applet.*;
 import java.awt.event.*;
