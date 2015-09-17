@@ -1,11 +1,10 @@
-/**
-*Class ClientHandler is a threaded class that puts connected clients in a collection.
-*Internetprogrammering 1 - Course
-*@author Martin Carlsson
+/*
+Class to handle multiple clients as a group.
+
+Author: Prithvijit Chakrabarty (prithvichakra@gmail.com)
 */
 import java.net.*;
 import java.util.*;
-
 
 public class ClientHandler implements Runnable {
     
@@ -15,7 +14,6 @@ public class ClientHandler implements Runnable {
     public Server chatServer; 
     private ArrayList clientArr; // Array of clients
     private Thread thread;
-        
     
     /*Constructor*/
     public ClientHandler(Server chatServer, int port) {
@@ -37,8 +35,7 @@ public class ClientHandler implements Runnable {
         clientArr=new ArrayList();
         thread=new Thread(this);
         thread.start(); // starts this thread
-        }
-        
+    }
         
     /*Looks for new clients and adds them to an ArrayList*/
     public void run() {
