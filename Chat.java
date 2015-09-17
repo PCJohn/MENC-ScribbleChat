@@ -1,4 +1,7 @@
+/*GUI for the chat client for MENC chat.
 
+Author: Prithvitji Chakrabarty (prithvichakra@gmail.com)
+*/
 import javax.swing.*;
 import javax.swing.text.JTextComponent;
 import java.awt.*;
