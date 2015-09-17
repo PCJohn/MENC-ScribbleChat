@@ -1,4 +1,7 @@
+/*Java socket server. Displays all data received.
 
+Author: Prithvijit Chakrabarty (prithvichakra@gmail.com)
+*/
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
@@ -7,9 +10,6 @@ import java.io.*;
 
     
     public class Server extends JFrame {
-        
-
-        
         private JTextArea  messageArea=new JTextArea(); 
         private JScrollPane jsp=new JScrollPane(messageArea); 
         private ClientHandler ch;
@@ -35,8 +35,7 @@ import java.io.*;
         setSize(600,300);
         show();
         }
-        
-        
+
         
         WindowAdapter closeWindow=new WindowAdapter() {
             public void windowClosing(WindowEvent e){
@@ -51,28 +50,19 @@ import java.io.*;
                 
             }
         };
-    
-        
-        
+
         public void newTitle(String host, int port, int clientCount) {
             
             setTitle("PriSais on " + host + " listening on port " + port + " Clients: " + clientCount);
             show();
             
         }
-        
-        
      
         public void showMessage(String msg) {
-            
             messageArea.append(msg+"\n");
-            
         }
-        
-        
-       
+
         public static void main(String [] args){ 
-            
             int port;
             try{
                 port=Integer.parseInt(args[0]);
